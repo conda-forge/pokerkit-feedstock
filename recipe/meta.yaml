@@ -1,5 +1,5 @@
 {% set name = "pokerkit" %}
-{% set version = "0.4.10" %}
+{% set version = "0.4.12" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pokerkit-{{ version }}.tar.gz
-  sha256: 905efa2ac9584481fd1cb81a1c124a02617e36215e6f62f242aa2cd34a8787a5
+  sha256: 772687a9d9150ff100aeb6ca17cb860f5e1c4c8d47dd23cf617d7061d91976de
 
 build:
   noarch: python
