@@ -1,9 +1,9 @@
 schema_version: 1
 
 context:
-  python_min: 3.11
+  python_min: "3.11"
   name: pokerkit
-  version: "0.7.3"
+  version: "0.7.4"
 
 package:
   name: ${{ name|lower }}
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/pokerkit-${{ version }}.tar.gz
-  sha256: 16a13b08b51ef360bc8ed5e8202543ac92fe4d782f3fec1c94d7b50187b6f21f
+  sha256: df6d69ef0a292b672cd1ef5de2163db50cdac20a2189f700a35d92bcdbcba9ed
 
 build:
   number: 0
@@ -31,7 +31,9 @@ tests:
       imports:
         - pokerkit
       pip_check: true
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
 
 about:
   summary: A Python package for various poker tools
