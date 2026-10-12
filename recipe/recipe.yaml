@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: pokerkit
-  version: "0.7.6"
+  version: "0.7.7"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/pokerkit-${{ version }}.tar.gz
-  sha256: f68e4fcc3ef8c19150c2540b69f39d24e62aa1e3ce2fe885440d0707ed62b15e
+  sha256: 5df50e9e500467f7335192debbfc4bfc038ab25f5ffdd3fbbdee1771b5814bdb
 
 build:
   number: 0
